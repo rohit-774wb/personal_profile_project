@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">MyProfile</a>
+    <button id="themeToggle" class="theme-btn" type="button">🌙 Dark Mode</button>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <div class="avatar">RS</div>
+      <p class="eyebrow">HELLO, I'M</p>
+      <h1>Rohit Sikari</h1>
+      <h2>B.Tech CSE Student</h2>
+      <p class="intro">I am a computer science student interested in programming, web development and learning new technologies.</p>
+      <a class="primary-btn" href="#contact">Contact Me</a>
+    </section>
+
+    <section class="card">
+      <h2>About Me</h2>
+      <p>I enjoy solving problems, building useful projects and improving my technical skills. My goal is to become a skilled software developer.</p>
+    </section>
+
+    <section class="card">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+        <span>C</span><span>C++</span><span>Computer Networks</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Mini Quiz</h2>
+      <p class="muted">Answer these five questions and check your score.</p>
+      <form id="quizForm">
+        <div class="question">
+          <p>1. What does HTML stand for?</p>
+          <label><input type="radio" name="q1" value="a"> Hyper Text Markup Language</label>
+          <label><input type="radio" name="q1" value="b"> High Text Machine Language</label>
+          <label><input type="radio" name="q1" value="c"> Hyper Tool Multi Language</label>
+        </div>
+        <div class="question">
+          <p>2. Which language styles a webpage?</p>
+          <label><input type="radio" name="q2" value="a"> Python</label>
+          <label><input type="radio" name="q2" value="b"> CSS</label>
+          <label><input type="radio" name="q2" value="c"> SQL</label>
+        </div>
+        <div class="question">
+          <p>3. Which language adds interactivity to webpages?</p>
+          <label><input type="radio" name="q3" value="a"> JavaScript</label>
+          <label><input type="radio" name="q3" value="b"> HTML</label>
+          <label><input type="radio" name="q3" value="c"> XML</label>
+        </div>
+        <div class="question">
+          <p>4. Which tag creates a hyperlink?</p>
+          <label><input type="radio" name="q4" value="a"> &lt;p&gt;</label>
+          <label><input type="radio" name="q4" value="b"> &lt;img&gt;</label>
+          <label><input type="radio" name="q4" value="c"> &lt;a&gt;</label>
+        </div>
+        <div class="question">
+          <p>5. Which method selects an element by its ID?</p>
+          <label><input type="radio" name="q5" value="a"> document.queryAll()</label>
+          <label><input type="radio" name="q5" value="b"> document.getElementById()</label>
+          <label><input type="radio" name="q5" value="c"> document.getClass()</label>
+        </div>
+        <button class="primary-btn" type="submit">Submit Quiz</button>
+        <button class="secondary-btn" type="reset">Reset</button>
+      </form>
+      <p id="quizResult" class="result" aria-live="polite"></p>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>Contact</h2>
+      <p>Email: your.email@example.com</p>
+      <p>Location: India</p>
+    </section>
+  </main>
+  <footer>© 2026 Rohit Sikari | Personal Profile</footer>
+  <script src="script.js"></script>
+</body>
+</html>
